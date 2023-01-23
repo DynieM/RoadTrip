@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>RoadTrip Plan Your Trip!</title>
+        <link rel = "stylesheet" href = "src/css/plantrip.css">
+
+        <!-- Scripts -->
+        <script defer src="src/scripts/plantrip.js"></script>
+    </head>
+    <body style = "background-color: #98e0e5">
+        <!-- Images -->
+        <img class = "dirt-road-bottom" src = "icons/DirtRoad.png" alt = "Dirt Road Bottom Icon" width = "2000" height = "700">
+        <img class = "road" src = "icons/Road.png" alt = "Road Icon" width = "1700" height = "725">
+        <img class = "dirt-road-top" src = "icons/DirtRoad.png" alt = "Dirt Road Top Icon" width = "2000" height = "250">
+        <img class = "car" src = "icons/car.png" alt = "Car Icon" width = "625" height = "625">
+        <img class = "cloud-left" src = "icons/Cloud.png" alt = "Cloud Icon" width = "600" height = "600">
+        <img class = "tree-stump" src = "icons/TreeStump.png" alt = "Tree Stump Icon" width = "400" height = "400">
+        <img class = "cactus" src = "icons/Cactus.png" alt = "Cactus Icon" width = "550" height = "550">
+        <img class = "bush" src = "icons/Bush.png" alt = "Bush Icon" width = "400" height = "400">
+        <img class = "cloud-right" src = "icons/Cloud.png" alt = "Cloud Icon" width = "600" height = "600">
+
+        <h1>Plan Your Trip!</h1> 
+
+        <h3>Pick the next state in your route: </h3>
+
+        <select id="stateSelect" placeholder="Choose your state">
+            <option value="blank">Select a State</option>
+            <option value="0">Alabama</option>
+            <option value="1">Arizona</option>
+            <option value="2">Arkansas</option>
+            <option value="3">California</option>
+            <option value="4">Colorado</option>
+            <option value="5">Connecticut</option>
+            <option value="6">Delaware</option>
+            <option value="7">Florida</option>
+            <option value="8">Georgia</option>
+            <option value="9">Idaho</option>
+            <option value="10">Illinois</option>
+            <option value="11">Indiana</option>
+            <option value="12">Iowa</option>
+            <option value="13">Kansas</option>
+            <option value="14">Kentucky</option>
+            <option value="15">Louisiana</option>
+            <option value="16">Maine</option>
+            <option value="17">Maryland</option>
+            <option value="18">Massachusetts</option>
+            <option value="19">Michigan</option>
+            <option value="20">Minnesota</option>
+            <option value="21">Mississippi</option>
+            <option value="22">Missouri</option>
+            <option value="23">Montana</option>
+            <option value="24">Nebraska</option>
+            <option value="25">Nevada</option>
+            <option value="26">New Hampshire</option>
+            <option value="27">New Jersey</option>
+            <option value="28">New Mexico</option>
+            <option value="29">New York</option>
+            <option value="30">North Carolina</option>
+            <option value="31">North Dakota</option>
+            <option value="32">Ohio</option>
+            <option value="33">Oklahoma</option>
+            <option value="34">Oregon</option>
+            <option value="35">Pennsylvania</option>
+            <option value="36">Rhode Island</option>
+            <option value="37">South Carolina</option>
+            <option value="38">South Dakota</option>
+            <option value="39">Tennessee</option>
+            <option value="40">Texas</option>
+            <option value="41">Utah</option>
+            <option value="42">Vermont</option>
+            <option value="43">Virginia</option>
+            <option value="44">Washington</option>
+            <option value="45">West Virginia</option>
+            <option value="46">Wisconsin</option>
+            <option value="47">Wyoming</option>
+        </select>
+
+        <div>
+            <button id="addBtn" style = "transform:translateX(-25px);transform:translateY(-250px);">Add State To List</button>
+        </div>
+        <div style = "margin-left: 200px;">
+            <button id = "done_btn"> Done </button>
+        </div>
+        <button id = "goback_btn" onclick="window.location.href='index.html';">Home</button>
+
+        <footer>
+            RoadTrip Project Created By Team 20: Anna Macinnis, Daisy Nguyen, Dynie Mesoneuvre, Noah Carrier
+            <a href="https://docs.google.com/document/d/1ieDgPQo-LrwCqGmtPUCRu34jMhZunQXqmar1HXphHWQ/edit?usp=sharing" target="_blank">• Sources</a>
+        </footer>
+    </body>
+</html>

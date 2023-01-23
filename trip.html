@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>Trip</title>
+
+        <!-- Scripts -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+        <script src="src/scripts/initialize.js"></script> 
+        <script defer src="src/scripts/trip.js"></script>
+                <link rel = "stylesheet" href = "src/css/trip.css">
+    </head>
+    <body>
+        <section id = "heading">
+            <h1>
+                Your Trip:
+            </h1>
+        </section>
+          <h2>
+                Select A State For More Info
+            </h2>
+
+        <section id = "stateinformation">
+        <div id = "statelist">
+            <div id = "ALinfo" class = "stateInfo">
+                <a href="alabama.html">Alabama</a>
+            </div>
+            <div id = "AZinfo" class = "stateInfo">
+               
+                 <a href="arizona.html">Arizona</a>
+            </div>
+            <div id = "ARinfo" class = "stateInfo">
+               <a href="arkansas.html">Arkansas</a>
+            </div>
+            <div id = "CAinfo" class = "stateInfo">
+                <a href="california.html">California</a>
+            </div>
+            <div id = "COinfo" class = "stateInfo">
+                 <a href="colorado.html">Colorado</a>
+            </div>
+            <div id = "CTinfo" class = "stateInfo">
+               <a href="connecticut.html">Connecticut</a>
+            </div>
+            <div id = "DEinfo" class = "stateInfo">
+                 <a href="deleware.html">Delaware</a>
+            </div>
+            <div id = "FLinfo" class = "stateInfo">
+                 <a href="florida.html">Florida</a>
+            </div>
+            <div id = "GAinfo" class = "stateInfo">
+               <a href="georgia.html">Georgia</a>
+            </div>
+            <div id = "IDinfo" class = "stateInfo">
+               <a href="idaho.html">Idaho</a>
+            </div>
+            <div id = "ILinfo" class = "stateInfo">
+              <a href="illinois.html">Illinois</a> 
+            </div>
+            <div id = "INinfo" class = "stateInfo">
+                <a href="indiana.html">Indiana</a>
+            </div>
+            <div id = "IAinfo" class = "stateInfo">
+                <a href="iowa.html">Iowa</a> 
+            </div>
+            <div id = "KSinfo" class = "stateInfo">
+                <a href="kansas.html">Kansas</a>
+            </div>
+            <div id = "KYinfo" class = "stateInfo">
+               <a href="kentucky.html">Kentucky</a>
+            </div>
+            <div id = "LAinfo" class = "stateInfo">
+               <a href="louisiana.html">Lousiana</a> 
+            </div>
+            <div id = "MEinfo" class = "stateInfo">
+                <a href="maine.html">Maine</a>  
+            </div>
+            <div id = "MDinfo" class = "stateInfo">
+               <a href="maryland.html">Maryland</a> 
+            </div>
+            <div id = "MAinfo" class = "stateInfo">
+                <a href="massachusetts.html">Massachusetts</a>
+            </div>
+            <div id = "MIinfo" class = "stateInfo">
+                 <a href="michigan.html">Michigan</a>
+            </div>
+            <div id = "MNinfo" class = "stateInfo">
+             <a href="minnesota.html">Minnesota</a>
+            </div>
+            <div id = "MSinfo" class = "stateInfo">
+                <a href="mississippi.html">Mississippi</a>
+            </div>
+            <div id = "MOinfo" class = "stateInfo">
+                <a href="missouri.html">Missouri</a>
+            </div>
+            <div id = "MTinfo" class = "stateInfo">
+                 <a href="montana.html">Montana</a> 
+            </div>
+            <div id = "NEinfo" class = "stateInfo">
+                 <a href="nebraska.html">Nebraska</a>
+            </div>
+            <div id = "NVinfo" class = "stateInfo">
+                 <a href="nevada.html">Nevada</a>
+            </div>
+            <div id = "NHinfo" class = "stateInfo">
+               <a href="newhampshire.html">New Hampshire</a>
+            </div>
+            <div id = "NJinfo" class = "stateInfo">
+                <a href="newjersey.html">New Jersey</a> 
+            </div>
+            <div id = "NMinfo" class = "stateInfo">
+                 <a href="newmexico.html">New Mexico</a>
+            </div>
+            <div id = "NYinfo" class = "stateInfo">
+                 <a href="newyork.html">New York</a>  
+            </div>
+            <div id = "NCinfo" class = "stateInfo">
+                 <a href="northcarolina.html">North Carolina</a>
+            </div>
+            <div id = "NDinfo" class = "stateInfo">
+                <a href="northdakota.html">North Dakota</a>
+            </div>
+            <div id = "OHinfo" class = "stateInfo">
+                <a href="ohio.html">Ohio</a> 
+            </div>
+            <div id = "OKinfo" class = "stateInfo">
+              <a href="oklahoma.html">Oklahoma</a>
+            </div>
+            <div id = "ORinfo" class = "stateInfo">
+              <a href="oregon.html">Oregon</a>
+            </div>
+            <div id = "PAinfo" class = "stateInfo">
+                 <a href="pennsylvania.html">Pennsylvania</a>  
+            </div>
+            <div id = "RIinfo" class = "stateInfo">
+                <a href="rhodeisland.html">Rhode Island</a>  
+            </div>
+            <div id = "SCinfo" class = "stateInfo">
+                <a href="southcarolina.html">South Carolina</a>
+            </div>
+            <div id = "SDinfo" class = "stateInfo">
+                <a href="southdakota.html">South Dakota</a>
+            </div>
+            <div id = "TNinfo" class = "stateInfo">
+                 <a href="tennessee.html">Tennessee</a>  
+            </div>
+            <div id = "TXinfo" class = "stateInfo">
+                <a href="texas.html">Texas</a>
+            </div>
+            <div id = "UTinfo" class = "stateInfo">
+               <a href="utah.html">Utah</a>
+            </div>
+            <div id = "VTinfo" class = "stateInfo">
+               <a href="Vermont.html">Vermont</a>
+            </div>
+            <div id = "VAinfo" class = "stateInfo">
+                <a href="virginia.html">Virginia</a> 
+            </div>
+            <div id = "WAinfo" class = "stateInfo">
+               <a href="washington.html">Washington</a>
+            </div>
+            <div id = "WVinfo" class = "stateInfo">
+               <a href="westvirginia.html">West Virginia</a>
+            </div>
+            <div id = "WIinfo" class = "stateInfo">
+                <a href="wisconsin.html">Wisconsin</a>
+            </div>
+            <div id = "WYinfo" class = "stateInfo">
+              <a href="wyoming.html">Wyoming</a>
+            </div>
+        </div>
+        </section>
+
+
+        </ul>
+    </body>
+</html>
